@@ -1,47 +1,47 @@
-# RIWI Sport – Instrucciones de Uso
+# RIWI Sport – User Instructions
 
-## 1. Restaurar la Base de Datos
+## 1. Restore the Database
 
-1. Instala PostgreSQL y crea una base de datos llamada `riwisport`.
-2. Restaura el archivo `RiwiSport.sql`:
+1. Install PostgreSQL and create a database named `riwisport`.  
+2. Restore the `RiwiSport.sql` file:
 
-```sh
-psql -U postgres -d riwisport -f RiwiSport.sql
-```
+    ```sh
+    psql -U postgres -d riwisport -f RiwiSport.sql
+    ```
 
-## 2. Configurar Variables de Entorno
+## 2. Set Up Environment Variables
 
-Crea un archivo `.env` en el mismo directorio que el notebook con el siguiente contenido (ajusta usuario y contraseña):
+Create a `.env` file in the same directory as the notebook with the following content (adjust the username and password as needed):
 
-```
-DB_USER=postgres
-DB_PASSWORD=Qwe.123*
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=riwisport
-```
+    ```
+    DB_USER=postgres
+    DB_PASSWORD=Qwe.123*
+    DB_HOST=localhost
+    DB_PORT=5432
+    DB_NAME=riwisport
+    ```
 
-## 3. Instalar Dependencias
+## 3. Install Dependencies
 
-Instala los paquetes requeridos:
+Install the required packages:
 
-```sh
-pip install pandas numpy sqlalchemy psycopg2-binary matplotlib seaborn python-dotenv
-```
+    ```sh
+    pip install pandas numpy sqlalchemy psycopg2-binary matplotlib seaborn python-dotenv
+    ```
 
-## 4. Ejecutar el Notebook
+## 4. Run the Notebook
 
-Abre y ejecuta el notebook `analisis_RIWI_Sport_Duana-Ochoa.ipynb` en Jupyter o VS Code.
+Open and run the notebook `analisis_RIWI_Sport_Duana-Ochoa.ipynb` in Jupyter or VS Code.
 
 ---
 
-**Dependencias mínimas:**
-- pandas
-- numpy
-- sqlalchemy
-- psycopg2-binary
-- matplotlib
-- seaborn
-- python-dotenv
+**Minimum dependencies:**
+- pandas  
+- numpy  
+- sqlalchemy  
+- psycopg2-binary  
+- matplotlib  
+- seaborn  
+- python-dotenv  
 
-**Nota:** Si cambias los datos de conexión, actualiza el archivo `.env` y el string de conexión en el notebook.
+**Note:** If you modify the connection details, update both the `.env` file and the connection string inside the notebook.
