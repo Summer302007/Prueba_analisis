@@ -13,21 +13,21 @@
 
 Create a `.env` file in the same directory as the notebook with the following content (adjust the username and password as needed):
 
-    ```
-    DB_USER=postgres
-    DB_PASSWORD=Qwe.123*
-    DB_HOST=localhost
-    DB_PORT=5432
-    DB_NAME=riwisport
-    ```
+```
+DB_USER=postgres
+DB_PASSWORD=Qwe.123*
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=riwisport
+```
 
 ## 3. Install Dependencies
 
 Install the required packages:
 
-    ```sh
-    pip install pandas numpy sqlalchemy psycopg2-binary matplotlib seaborn python-dotenv
-    ```
+```sh
+pip install pandas numpy sqlalchemy psycopg2-binary matplotlib seaborn python-dotenv
+```
 
 ## 4. Run the Notebook
 
